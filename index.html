@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario de programacion</title>
+</head>
+<body>
+
+<h1>Glosario de programacion</h1>
+
+ <input type="search" id="buscador"> 
+ buscar: <button type="button" id="btnNuevo">Nuevo</button>
+
+ <div id="filtros" class="filtros">
+ <label><input type="radio" name="filtro" value="Todos" checked> Todos</label>
+ <label><input type="radio" name="filtro" value="JavaScript"> JavaScript</label>
+ <label><input type="radio" name="filtro" value="HTML"> HTML</label>
+ <label><input type="radio" name="filtro" value="CSS"> CSS</label>
+</div>
+ 
+<article class="tarjeta javascript">
+ <div class="tarjeta-titulo">
+ <h2>Variable</h2>
+ <span class="categoria">JavaScript</span>
+ </div>
+ <div class="tarjeta-acciones">
+ <button class="boton btn-editar">Editar</button>
+ <button class="boton btn-eliminar">Eliminar</button>
+ </div>
+</article> 
+
+<p id="sinresultados" hidden>No se encontró ese término</p>.
+
+<footer> <p id="contador">Hay 2 de 2 términos</p> </footer> 
+
+    
+</body>
+</html>
