@@ -1,0 +1,144 @@
+{
+  "terminos": [
+    {
+      "id": "1",
+      "termino": "Variable",
+      "categoria": "JavaScript",
+      "definicion": "Es un espacio donde se guarda un dato para poder utilizarlo después.",
+      "ejemplo": "let edad = 18;"
+    },
+    {
+      "id": "2",
+      "termino": "Array",
+      "categoria": "JavaScript",
+      "definicion": "Es una lista que permite guardar varios valores dentro de una sola variable.",
+      "ejemplo": "let frutas = [\"mango\", \"piña\"];"
+    },
+    {
+      "id": "3",
+      "termino": "Function",
+      "categoria": "JavaScript",
+      "definicion": "Es un bloque de código que realiza una tarea específica y puede reutilizarse.",
+      "ejemplo": "function saludar() { alert(\"Hola\"); }"
+    },
+    {
+      "id": "4",
+      "termino": "If",
+      "categoria": "JavaScript",
+      "definicion": "Permite ejecutar un código solamente cuando se cumple una condición.",
+      "ejemplo": "if (edad >= 18) { console.log(\"Mayor de edad\"); }"
+    },
+    {
+      "id": "5",
+      "termino": "For",
+      "categoria": "JavaScript",
+      "definicion": "Es un ciclo que permite repetir un bloque de código varias veces.",
+      "ejemplo": "for (let i = 0; i < 5; i++) { console.log(i); }"
+    },
+    {
+      "id": "6",
+      "termino": "While",
+      "categoria": "JavaScript",
+      "definicion": "Repite un bloque de código mientras una condición sea verdadera.",
+      "ejemplo": "while (contador < 5) { contador++; }"
+    },
+    {
+      "id": "7",
+      "termino": "Console.log",
+      "categoria": "JavaScript",
+      "definicion": "Sirve para mostrar información en la consola del navegador y ayudar a revisar el código.",
+      "ejemplo": "console.log(\"Hola mundo\");"
+    },
+    {
+      "id": "8",
+      "termino": "Evento",
+      "categoria": "JavaScript",
+      "definicion": "Es una acción que ocurre en una página, como hacer clic en un botón.",
+      "ejemplo": "boton.addEventListener(\"click\", funcion);"
+    },
+    {
+      "id": "9",
+      "termino": "DOM",
+      "categoria": "JavaScript",
+      "definicion": "Es la forma en que JavaScript puede acceder y modificar los elementos de una página HTML.",
+      "ejemplo": "document.getElementById(\"titulo\");"
+    },
+    {
+      "id": "10",
+      "termino": "String",
+      "categoria": "JavaScript",
+      "definicion": "Es un tipo de dato utilizado para guardar texto.",
+      "ejemplo": "let nombre = \"Carlos\";"
+    },
+    {
+      "id": "11",
+      "termino": "HTML",
+      "categoria": "HTML",
+      "definicion": "Es el lenguaje utilizado para crear la estructura y el contenido de una página web.",
+      "ejemplo": "<h1>Mi página web</h1>"
+    },
+    {
+      "id": "12",
+      "termino": "Form",
+      "categoria": "HTML",
+      "definicion": "Es un elemento que permite crear formularios para recibir información del usuario.",
+      "ejemplo": "<form><input type=\"text\"></form>"
+    },
+    {
+      "id": "13",
+      "termino": "Input",
+      "categoria": "HTML",
+      "definicion": "Es un campo que permite al usuario ingresar diferentes tipos de información.",
+      "ejemplo": "<input type=\"text\">"
+    },
+    {
+      "id": "14",
+      "termino": "Table",
+      "categoria": "HTML",
+      "definicion": "Es una estructura utilizada para organizar información en filas y columnas.",
+      "ejemplo": "<table><tr><td>Nombre</td></tr></table>"
+    },
+    {
+      "id": "15",
+      "termino": "Button",
+      "categoria": "HTML",
+      "definicion": "Es un elemento que crea un botón con el que el usuario puede interactuar.",
+      "ejemplo": "<button>Agregar</button>"
+    },
+    {
+      "id": "16",
+      "termino": "CSS",
+      "categoria": "CSS",
+      "definicion": "Es el lenguaje utilizado para darle diseño y apariencia a una página web.",
+      "ejemplo": "body { background-color: white; }"
+    },
+    {
+      "id": "17",
+      "termino": "Color",
+      "categoria": "CSS",
+      "definicion": "Permite cambiar el color del texto de un elemento.",
+      "ejemplo": "p { color: blue; }"
+    },
+    {
+      "id": "18",
+      "termino": "Background",
+      "categoria": "CSS",
+      "definicion": "Permite establecer el color o fondo que tendrá un elemento.",
+      "ejemplo": "body { background: lightgray; }"
+    },
+    {
+      "id": "19",
+      "termino": "Margin",
+      "categoria": "CSS",
+      "definicion": "Es el espacio que se deja alrededor de un elemento para separarlo de otros elementos.",
+      "ejemplo": "div { margin: 20px; }"
+    },
+    {
+      "id": "20",
+      "termino": "Padding",
+      "categoria": "CSS",
+      "definicion": "Es el espacio que existe entre el contenido de un elemento y su borde.",
+      "ejemplo": "div { padding: 10px; }"
+    }
+  ]
+}

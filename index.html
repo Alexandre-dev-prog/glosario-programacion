@@ -1,39 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glosario de programacion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glosario de Programación</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<h1>Glosario de programacion</h1>
+    <header>
 
- <input type="search" id="buscador"> 
- buscar: <button type="button" id="btnNuevo">Nuevo</button>
+        <h1>Glosario de Programación</h1>
 
- <div id="filtros" class="filtros">
- <label><input type="radio" name="filtro" value="Todos" checked> Todos</label>
- <label><input type="radio" name="filtro" value="JavaScript"> JavaScript</label>
- <label><input type="radio" name="filtro" value="HTML"> HTML</label>
- <label><input type="radio" name="filtro" value="CSS"> CSS</label>
-</div>
- 
-<article class="tarjeta javascript">
- <div class="tarjeta-titulo">
- <h2>Variable</h2>
- <span class="categoria">JavaScript</span>
- </div>
- <div class="tarjeta-acciones">
- <button class="boton btn-editar">Editar</button>
- <button class="boton btn-eliminar">Eliminar</button>
- </div>
-</article> 
+        <!-- Buscador -->
+        <input type="search" id="buscador" placeholder="Buscar término...">
 
-<p id="sinresultados" hidden>No se encontró ese término</p>.
+        <!-- Filtros -->
+        <div id="filtros" class="filtros">
 
-<footer> <p id="contador">Hay 2 de 2 términos</p> </footer> 
+            <label>
+                <input type="radio" name="filtro" value="Todos" checked>
+                Todos
+            </label>
 
-    
+            <label>
+                <input type="radio" name="filtro" value="JavaScript">
+                JavaScript
+            </label>
+
+            <label>
+                <input type="radio" name="filtro" value="HTML">
+                HTML
+            </label>
+
+            <label>
+                <input type="radio" name="filtro" value="CSS">
+                CSS
+            </label>
+
+        </div>
+
+        <!-- Botón para agregar un nuevo término -->
+        <button id="btn-nuevo">+ Nuevo término</button>
+
+    </header>
+
+
+    <main>
+
+        <!-- Lista de términos -->
+        <section id="lista-terminos">
+
+            <!-- Primera tarjeta -->
+            <article class="tarjeta javascript">
+
+                <div class="tarjeta-titulo">
+                    <h2>Variable</h2>
+                    <span class="categoria">JavaScript</span>
+                </div>
+
+                <p>Un espacio donde se guarda un dato para usarlo después.</p>
+
+                <pre><code>let edad = 15;</code></pre>
+
+                <div class="tarjeta-acciones">
+                    <button class="boton btn-editar">Editar</button>
+                    <button class="boton btn-eliminar">Eliminar</button>
+                </div>
+
+            </article>
+
+
+            <!-- Segunda tarjeta -->
+            <article class="tarjeta html">
+
+                <div class="tarjeta-titulo">
+                    <h2>Etiqueta</h2>
+                    <span class="categoria">HTML</span>
+                </div>
+
+                <p>Elemento utilizado para estructurar el contenido de una página web.</p>
+
+                <pre><code>&lt;h1&gt;Hola mundo&lt;/h1&gt;</code></pre>
+
+                <div class="tarjeta-acciones">
+                    <button class="boton btn-editar">Editar</button>
+                    <button class="boton btn-eliminar">Eliminar</button>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Mensaje cuando no hay resultados -->
+        <p id="sin-resultados" hidden>
+            No se encontró ese término
+        </p>
+
+    </main>
+
+
+    <footer>
+
+        <p id="contador">
+            Mostrando 2 de 2 términos
+        </p>
+
+    </footer>
+
+
+    <script src="Glosario.Json"></script>
 </body>
+
 </html>

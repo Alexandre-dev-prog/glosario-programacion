@@ -1,0 +1,115 @@
+:root {
+    --color-principal: #2f55d4;
+    --color-javascript: #f0db4f;
+    --color-html: #e44d26;
+    --color-css: #264de4;
+    --color-texto: #222;
+    --color-fondo: #f4f6f8;
+}
+
+/* Centrar el contenido */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+/* Separación de categorías */
+.tarjeta.javascript {
+    border-top: 5px solid var(--color-javascript);
+}
+
+.tarjeta.html {
+    border-top: 5px solid var(--color-html);
+}
+
+.tarjeta.css {
+    border-top: 5px solid var(--color-css);
+}
+
+/* Código */
+code {
+    display: block;
+    background-color: #222;
+    color: #fff;
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+/* Término y categoría */
+.termino {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Filtros */
+.filtros input {
+    display: none;
+}
+
+.filtros label {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Filtro seleccionado */
+.filtros label:has(input:checked) {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+/* Lista de términos */
+.lista-terminos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* Ocultar elementos */
+[hidden] {
+    display: none !important;
+}
+
+/* Adaptación para celular */
+@media (max-width: 600px) {
+    .lista-terminos {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .tarjeta {
+        padding: 15px;
+    }
+
+    .termino {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
