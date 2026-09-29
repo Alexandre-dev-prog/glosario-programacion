@@ -5,20 +5,20 @@ let idEditando = null;
 
 
 // Elementos del HTML
-const lista = document.getElementById("lista");
-const plantilla = document.getElementById("plantilla");
+const lista = document.getElementById("lista-terminos");
+const plantilla = document.getElementById("plantilla-tarjeta");
 const buscador = document.getElementById("buscador");
 const contador = document.getElementById("contador");
-const sinResultados = document.getElementById("sinResultados");
+const sinResultados = document.getElementById("sin-resultados");
 
 const filtros = document.getElementById("filtros");
 
 const formulario = document.getElementById("formulario");
-const errorFormulario = document.getElementById("errorFormulario");
+const errorFormulario = document.getElementById("error-formulario");
 
-const tituloFormulario = document.getElementById("tituloFormulario");
-const btnNuevo = document.getElementById("btnNuevo");
-const btnCancelar = document.getElementById("btnCancelar");
+const tituloFormulario = document.getElementById("titulo-formulario");
+const btnNuevo = document.getElementById("btn-nuevo");
+const btnCancelar = document.getElementById("btn-cancelar");
 
 
 // ======================================================
@@ -339,6 +339,7 @@ lista.addEventListener("click", async (e) => {
     }
 
     // ELIMINAR TÉRMINO
+
     if (
         e.target.matches(".btn-eliminar") &&
 
