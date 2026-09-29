@@ -139,6 +139,13 @@
       "categoria": "CSS",
       "definicion": "Es el espacio que existe entre el contenido de un elemento y su borde.",
       "ejemplo": "div { padding: 10px; }"
+    },
+    {
+      "id": "21",
+      "termino": "Border",
+      "categoria": "CSS",
+      "definicion": "Permite establecer el borde de un elemento.",
+      "ejemplo": "div { border: 1px solid black; }"
     }
   ]
 }

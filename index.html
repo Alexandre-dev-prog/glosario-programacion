@@ -7,7 +7,7 @@
 
     <title>Glosario de Programación</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styles.CSS">
 </head>
 
 <body>
@@ -52,49 +52,25 @@
 
     <main>
 
+        <form id="formulario" hidden>
+ <h2 id="titulo-formulario">Nuevo término</h2>
+ <label>Término <input type="text" name="termino" required></label>
+ <label>Categoría
+ <select name="categoria">
+ <option>JavaScript</option>
+ <option>HTML</option>
+ <option>CSS</option>
+ </select>
+ </label>
+ <label>Definición <textarea name="definicion" required></textarea></label>
+ <label>Ejemplo <textarea name="ejemplo"></textarea></label>
+ <p id="error-formulario" class="error"></p>
+ <button type="submit">Guardar</button>
+ <button type="button" id="btn-cancelar">Cancelar</button>
+</form>
+
         <!-- Lista de términos -->
-        <section id="lista-terminos">
-
-            <!-- Primera tarjeta -->
-            <article class="tarjeta javascript">
-
-                <div class="tarjeta-titulo">
-                    <h2>Variable</h2>
-                    <span class="categoria">JavaScript</span>
-                </div>
-
-                <p>Un espacio donde se guarda un dato para usarlo después.</p>
-
-                <pre><code>let edad = 15;</code></pre>
-
-                <div class="tarjeta-acciones">
-                    <button class="boton btn-editar">Editar</button>
-                    <button class="boton btn-eliminar">Eliminar</button>
-                </div>
-
-            </article>
-
-
-            <!-- Segunda tarjeta -->
-            <article class="tarjeta html">
-
-                <div class="tarjeta-titulo">
-                    <h2>Etiqueta</h2>
-                    <span class="categoria">HTML</span>
-                </div>
-
-                <p>Elemento utilizado para estructurar el contenido de una página web.</p>
-
-                <pre><code>&lt;h1&gt;Hola mundo&lt;/h1&gt;</code></pre>
-
-                <div class="tarjeta-acciones">
-                    <button class="boton btn-editar">Editar</button>
-                    <button class="boton btn-eliminar">Eliminar</button>
-                </div>
-
-            </article>
-
-        </section>
+        <section id="lista-terminos"></section>
 
 
         <!-- Mensaje cuando no hay resultados -->
@@ -108,13 +84,32 @@
     <footer>
 
         <p id="contador">
-            Mostrando 2 de 2 términos
+            Mostrando 0 términos
         </p>
 
     </footer>
 
 
     <script src="Glosario.Json"></script>
+
+<template id="plantilla-tarjeta">
+ <article class="tarjeta">
+ <div class="tarjeta-titulo">
+ <h2></h2>
+ <span class="categoria"></span>
+ </div>
+ <p></p>
+ <pre><code></code></pre>
+ <div class="tarjeta-acciones">
+ <button class="boton btn-editar">Editar</button>
+ <button class="boton btn-eliminar">Eliminar</button>
+ </div>
+ </article>
+</template>
+
+<script src="app.js"></script>
+
+
 </body>
 
 </html>
