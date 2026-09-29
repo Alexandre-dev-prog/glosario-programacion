@@ -1,4 +1,6 @@
-const API = "/terminos";
+const API = location.protocol === "file:"
+    ? "http://localhost:3000/terminos"
+    : "/terminos";
 
 let terminos = [];
 let idEditando = null;
@@ -27,11 +29,23 @@ const btnCancelar = document.getElementById("btn-cancelar");
 
 async function cargarTerminos() {
 
-    const respuesta = await fetch(API);
+    try {
+        const respuesta = await fetch(API);
 
-    terminos = await respuesta.json();
+        if (!respuesta.ok) {
+            throw new Error(`Error HTTP: ${respuesta.status}`);
+        }
 
-    mostrar();
+        terminos = await respuesta.json();
+        mostrar();
+
+    } catch (error) {
+        console.error("No se pudieron cargar los términos:", error);
+        contador.textContent = "Inicia el servidor con npm start para ver el glosario.";
+        lista.innerHTML = "";
+        sinResultados.hidden = false;
+        sinResultados.textContent = "No se pudo cargar el glosario. Inicia el servidor.";
+    }
 }
 
 
