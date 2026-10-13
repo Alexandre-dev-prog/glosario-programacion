@@ -147,5 +147,6 @@
       "definicion": "Permite establecer el borde de un elemento.",
       "ejemplo": "div { border: 1px solid black; }"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
